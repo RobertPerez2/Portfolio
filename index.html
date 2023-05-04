@@ -8,7 +8,7 @@
   <meta name="msapplication-navbutton-color" content="#1a324c">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description"
-    content="Robert Perez is a self-taught Front End Developer and school-taught Systems Engineer from Lagos, Nigeria.">
+    content="">
   <link rel="stylesheet" href="static/css/main.css" />
   <link rel="stylesheet" href="static/css/index.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png" />
@@ -516,9 +516,6 @@
     .thumbnail {
       float: left; width: 500px; height: auto;
     }
-    .projectbutton {
-      margin-left: 40%;
-    }
     .about-text {
     color: #3d3d3d;
     }
@@ -618,32 +615,34 @@
           <h2 class="section-title scroll-in">Hello, I'm Robert Perez!</h2>
           <div class="project scroll-in" style="border-bottom: none; margin: 0%; padding-top: 2%;">
             <div>
-              <img class="scroll-in" src="./static/images/about/headshot2.jpg" width="500px" height="auto" alt="">
+              <img class="headshot scroll-in" src="./static/images/about/headshot2.jpg" width="550px" height="auto" alt="">
             </div>
 
-            <div class="project-content-container">
+            <div class="project-content-container" style="background-color: white;">
               <div class="project-content">
                 <div class="project-description about-text">
-                  <p class="about-text"> I’m an aspiring software developer and first-generation student at the University of Southern California majoring in Computer Science.</p>
+                  <p class="about-text"> I’m a developer and first-generation student at the University of Southern California majoring in Computer Science.</p>
                   <p class="about-text"style="padding-top: 20px;">
-                    I have the most experience with C/C++ and have done a lot of work with different technologies including Flutter, PHP, MySQL, and Java. I've also worked extensively with HTML, CSS, and JavaScript, as well as popular frameworks such as Flutter. I have a strong knowledge of object-oriented programming and software engineering principles. I can also use MySQL, and NoSQL databases like Firebase.
+                    I have the most experience with C/C++ and have done a lot of work with different technologies including Flutter, PHP, and MySQL. I've worked extensively with HTML, CSS, and JavaScript, as well as with popular tools such as jQuery and Bootstrap. I also have a strong knowledge of software engineering principles and object-orientated programming with Java and Python.
                   <p class="about-text" style="padding-top: 20px;">
-                    Beyond technical skills, I’m committed to supporting historically excluded communities. As of late, I am a mentor to first-year undergraduate students and have taught both Python and Scratch in underprivileged communities within Los Angeles.
+                    Beyond my technical skills, I am deeply committed to supporting historically excluded communities and spreading the message that as members of underrepresented groups, we are not defined by the boundaries and stereotypes placed upon us. Through mentorship and teaching programming languages such as Python to schools in underprivileged communities of Los Angeles, I hope to promote diversity and inclusivity in the field and inspire future generations.
                   </p>
                   <p class="about-text" style="margin-top: 30px;">
                     Feel free to connect with me or drop me a message at:
                     robertperezalfredo@gmail.com
                   </p>
-                  <a href="https://linkedin.com/in/robertalfredoperez/" class="link-btn" style="margin-left: 25%; margin-top: 10px;">More About Me</a>
+                  <div class="link-div scroll-in">
+                    <a href="https://linkedin.com/in/robertalfredoperez/" class="link-btn" style="margin-top:10px;">More About Me</a>
+                  </div>
                 </div>
               </div>
 
             </div>
           </div>
-        </div>
-        <div class="section-link scroll-in" style="margin-left:auto; margin-right: auto;">
-          <div class="scroll-button animate-scroll" tabindex="0">
-            <div class="arrow">↓</div> technical projects
+          <div class="section-link scroll-in">
+            <div class="scroll-button animate-scroll" tabindex="0">
+              <div class="arrow">↓</div> technical projects
+            </div>
           </div>
         </div>
         
@@ -666,6 +665,77 @@
           </p>
         </div>
         <div class="project-container">
+          <!-- THRIVE -->
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/thrive.png" width="620" height="500" style="opacity: 90%;" alt="">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://303.itpwebdev.com/~raperez/final_project/home.php" target="_blank" rel="noopener">
+                    Thrive
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    Social-media platform dedicated to supporting individuals in their addiction recovery journey, particularly those struggling with alcoholism. A safe and supportive environment for users to share their experiences anonymously and find validation in community through shared struggles. Registered users can make posts, create replies, and keep track of their own posts, where they can edit and/or delete them as they wish. Implemented password encryption and input validation across the entire site.
+                  </p>
+                </div>
+                <ul class="project-tags" style="column-gap: 10px;">
+                  <li class="tag">PHP</li>
+                  <li class="tag">JAVASCRIPT</li>
+                  <li class="tag">Bootstrap</li>
+                  <li class="tag">HTML + CSS</li>
+                  <li class="tag">MySQL</li>
+                </ul>
+                <div class="project-links">
+                  <a href="http://303.itpwebdev.com/~raperez/final_project/home.php" target="_blank" rel="noopener"
+                  class="link-btn">Visit Site</a>
+                  <a href="https://github.com/RobertPerez2/Thrive" target="_blank" rel="noopener"
+                    class="link-btn">Github Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- STUDYSPOTS -->
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/studyspots.png" width="720" height="500" alt="">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://github.com/ArinNene/Team8_StudySpots" target="_blank" rel="noopener">
+                    StudySpots
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    Java-based web application to help users find the ideal space to study. With Google Maps API as its foundation, the app provides an interactive map with purple markers indicating various study spots, such as cafes and libraries. By clicking on any of these markers, users can view relevant information about the location and also leave their own review.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">Java Servlets</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">HTML + CSS</li>
+                  <li class="tag">MySQL</li>
+                  <li class="tag">Tomcat</li>
+                  <li class="tag">Google Maps API</li>
+                  <li class="tag">jQuery</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://drive.google.com/file/d/1hqnFFOr3Da3xIgD9QAaVKX5rqUx3stoA/view?usp=share_link" target="_blank" rel="noopener"
+                  class="link-btn">Presentation</a>
+                  <a href="https://drive.google.com/file/d/1P2_ZbNg0ijGCO09odt22XNJbseSvQ7na/view?usp=share_link" target="_blank" rel="noopener"
+                  class="link-btn">Demo</a>
+                  <a href="https://github.com/ArinNene/Team8_StudySpots" target="_blank" rel="noopener"
+                    class="link-btn">repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MOVIESEARCH -->
           <div class="project scroll-in">
             <div class="project-image">
               <img src="./static/images/projects/moviesearch.png" width="720" height="340" alt="">
@@ -683,8 +753,11 @@
                 </div>
                 <ul class="project-tags" title="Technologies used">
                   <li class="tag">PHP</li>
-                  <li class="tag">MySQL</li>
                   <li class="tag">JavaScript</li>
+                  <li class="tag">Bootstrap</li>
+                  <li class="tag">HTML + CSS</li>
+                  <li class="tag">MySQL</li>
+                  <li class="tag">MovieDB API</li>
                   <li class="tag">JQuery</li>
                 </ul>
                 <div class="project-links">
@@ -694,6 +767,7 @@
               </div>
             </div>
           </div>
+          <!-- REFRESH -->
           <div class="project scroll-in">
             <div class="project-image">
               <img src="./static/images/projects/Rotated full.png" width="720" height="500" alt="">
@@ -723,10 +797,11 @@
               </div>
             </div>
           </div>
+          <!-- PORTFOLIO -->
           <div class="project scroll-in" style="border-bottom: none;">
             <div class="project-image">
               <img src="./static/images/projects/personalwebsite.png" width="720" height="340"
-                alt="Robert Perez: Self Taught Developer, School Taught Engineer">
+                alt="Robert Perez">
             </div>
             <div class="project-content-container">
               <div class="project-content">
@@ -741,8 +816,7 @@
                 </div>
                 <ul class="project-tags">
                   <li class="tag">JavaScript</li>
-                  <li class="tag">CSS</li>
-                  <li class="tag">HTML</li>
+                  <li class="tag">HTML + CSS</li>
                 </ul>
                 <div class="project-links">
                   <a href="#" target="_blank" rel="noopener" class="link-btn">github repository</a>
@@ -750,9 +824,11 @@
               </div>
             </div>
           </div>
-          <a href="https://github.com/RobertPerez2" class="link-btn projectbutton">View more projects</a>
+          <div class="link-div scroll-in">
+            <a href="https://github.com/RobertPerez2" class="link-btn projectbutton">View more projects</a>
+          </div>
         </div>
-        <div class="section-link scroll-in">
+        <div class="section-link scroll-in" style="margin-left:auto; margin-right: auto;">
           <div class="scroll-button animate-scroll" tabindex="1">
             <div class="arrow">↓</div> technical and soft skills
           </div>
@@ -783,6 +859,7 @@
               <li>C/C++</li>
               <li>Java</li>
               <li>Python</li>
+              <li>Dart</li>
             </ul>
           </div>
           <div class="text scroll-in">
@@ -795,18 +872,17 @@
               <li>Git</li>
               <li>Docker</li>
               <li>jQuery</li>
-              <li>VSCode</li>
-              <li>xCode</li>
+              <li>Xcode</li>
             </ul>
           </div>
           <div class="text scroll-in">
-            <h3 class="text-header" style="text-align: center; font-size: 1.5em;">Soft Skills</h3>
+            <h3 class="text-header" style="text-align: center; font-size: 1.5em;">Soft Skills and Interests</h3>
             <ul class="tags" style="columns: 2;">
               <li>Bilingual-Spanish</li>
               <li>Willingness to Learn</li>
-              <li>Problem Solving</li>
               <li>Dependability</li>
-              <li>Leadership</li>
+              <li>Bouldering</li>
+              <li>Hiking</li>
             </ul>
           </div>
         </div>
